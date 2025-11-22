@@ -8,16 +8,40 @@
 }
 
 body {
-    background: #000
+    background: #000;
+    padding-top: 12vh;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
 .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #000;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 12vh
+    height: 12vh;
 }
+
 
 .logo {
     display: flex;
